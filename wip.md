@@ -23,3 +23,22 @@ Prints out this error message:
 │ ?Message │
 └──────────┘
 ```
+
+### `Import(filePath)`
+Loads an anko file and executes it. Very basic library "importing".
+
+## Object `file`
+
+### `Read(filePath)`
+Reads a file and returns a string. Now allowed to read file outside of current working directory.
+
+### `Write(filePath, content, ?shouldOverWrite)`
+Creates file at `filePath` with `content`, if it does not already exist. `shouldOverWrite` used to write even if exists already.
+
+### `SaveGame(filePath, content, password, ?shouldOverWrite)`
+Same as `Write`, but encrypts file with aes-128 with an sha256'd `password`.
+
+### `ReadGame`
+
+
+
